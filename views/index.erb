@@ -1,4 +1,8 @@
-<h1> Hi there, My name is <%= @name %> </h1>
+<% if @name %>
+<h1> Hi there, My name is <%= @name %> and colour is <%= @color %></h1>
+<% else %>
+<h1> Hi there, stranger </h>
+<% end %>
 
   <div style='border: 3px dashed red'>
   <img src='https://i.imgur.com/jFaSxym.png'>
